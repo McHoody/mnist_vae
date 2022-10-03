@@ -1,0 +1,23 @@
+{
+  "model": {
+    "in_channels": 1,
+    "latent_size": 8
+  },
+  "logger": {
+    "save_dir": "logs/"
+  },
+  "data": {
+    "save_dir": "data/",
+    "batch_size": 64,
+    "download": false
+  },
+  "trainer": {
+    "accelerator": "gpu",
+    "devices": [0],
+    "max_epochs": 100
+  },
+  "optimizer": {
+    "lr": 0.005
+  },
+  "seed": 42
+}
